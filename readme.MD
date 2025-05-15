@@ -25,7 +25,7 @@
 
 1. Клонируйте репозиторий:
 
-   git clone https://github.com/your_username/chat-app.git
+   git clone https://github.com/https://github.com/RondyC/ChatAI
    cd chat-app
 
 2. Создайте виртуальное окружение и активируйте его:
