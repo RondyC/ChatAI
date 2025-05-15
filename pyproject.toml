@@ -1,0 +1,33 @@
+[project]
+name            = "mychatapp"
+version         = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+  "flet==0.28.2",
+  "flet-core==0.24.1",
+  "flet-runtime==0.24.1",
+  "requests>=2.28.0",
+  "python-dotenv>=0.21.0"
+]
+
+[tool.flet]
+# Организация и название приложения
+org     = "com.example"    # будет префиксом bundle-id
+product = "AIChat_by_GerNA"         # отображаемое имя приложения
+
+# Путь к ассетам (иконка, splash и т.д.)
+assets = ["src/assets/"]
+
+# Настройка использования кастомного шаблона Android
+[tool.flet.template]
+path = "android"           # ваши manifest.template.xml и res/xml/…
+
+# Где лежит ваш Python-код и как его запускать
+[tool.flet.app]
+path   = "src"             # папка с main.py и прочими модулями
+module = "main"            # main.py → ft.app(target=main)
+
+[tool.flet.android]
+android_min_sdk    = 21
+android_target_sdk = 33
+bundle-id          = "com.example.aichat"

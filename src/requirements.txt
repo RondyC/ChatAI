@@ -1,0 +1,5 @@
+flet==0.28.2
+flet-core==0.24.1
+flet-runtime==0.24.1
+requests>=2.28.0
+python-dotenv>=0.21.0
